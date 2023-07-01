@@ -15,7 +15,8 @@ struct Delegate;
 fn main() {
     let window = WindowDesc::new(ui_builder())
         .title("Lagswitch")
-        .with_min_size((200.0, 200.0));
+        .with_min_size((200.0, 200.0))
+        .window_size((200.0, 200.0));
 
     AppLauncher::with_window(window)
         .delegate(Delegate)
